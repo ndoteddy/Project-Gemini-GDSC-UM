@@ -1,0 +1,53 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directory
+jspm_packages/
+
+# Build output
+/dist
+/build
+
+# .env file for environment variables
+.env
+.env.test
+
+# IDE and editor directories
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# npm package lock files (optional)
+package-lock.json
+yarn.lock
+
+# Typescript output
+*.tsbuildinfo
+
+# Serverless Framework files
+.serverless/
+
+# Test coverage directory
+coverage/
+
+# AWS Lambda deploy directories
+lambda/
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.swp
+*.swo
