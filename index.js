@@ -4,10 +4,20 @@ const axios = require('axios');
 const GEMINI_API_URL = process.env.GEMINI_API_URL;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const FULL_URL = `${GEMINI_API_URL}?key=${GEMINI_API_KEY}`;
+const SERVERLESS_API_KEY = process.env.SERVERLESS_API_KEY;
+
 exports.analyzeSentiment = async (req, res) => {
     try {
       // Extract dummy records and generationConfig from the request body
     const { texts, generationConfig } = req.body; // Expecting 'texts' array and 'generationConfig' object
+
+    const requestApiKey = req.headers['x-api-key']; // Custom header name for the API key
+    if (requestApiKey !== SERVERLESS_API_KEY) {
+      return res.status(401).send({
+        success: false,
+        error: "Unauthorized: Invalid or missing API key."
+      });
+    }
 
     // Validate the inputs
     if (!texts || !Array.isArray(texts)) {

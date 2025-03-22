@@ -1,9 +1,10 @@
 # Serverless Sentiment Analysis API Deployment on Google Cloud
 
 ====================================================================================
-Hernando Ivan Teddy 
-====================================================================================
+
 This guide outlines the steps to deploy a serverless sentiment analysis API using Google Cloud Functions. The API utilizes the Gemini API for sentiment analysis and can be accessed via a public endpoint.
+
+Author : Hernando Ivan Teddy
 
 ## Steps for Deployment
 
@@ -71,7 +72,7 @@ This guide outlines the steps to deploy a serverless sentiment analysis API usin
        --runtime nodejs20 \
        --trigger-http \
        --allow-unauthenticated \
-       --set-env-vars GEMINI_API_URL="<<GEMINI_API_URL>>",GEMINI_API_KEY="<<GEMINI_API_KEY>>"
+       --set-env-vars GEMINI_API_URL="<<GEMINI_API_URL>>",GEMINI_API_KEY="<<GEMINI_API_KEY>>",SERVERLESS_API_KEY="<<your_serverless_api_key_custom_name>>"
      ```
 
 ### 15. **Obtain the Deployment URL**
