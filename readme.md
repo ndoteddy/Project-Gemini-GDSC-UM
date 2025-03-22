@@ -57,10 +57,15 @@ Author : Hernando Ivan Teddy
      ```bash
      npm init -y
      npm install axios
+     touch index.js
+     follow the tutorial from the instructor
      ```
-
-### 12. **Create the `index.js` File**
-   - Download the `index.js` file from the provided GitHub repository or create it manually in your Cloud Shell editor.
+   - Or you can simply clone this repository 
+  ```bash
+     git clone https://github.com/ndoteddy/Project-Gemini-GDSC-UM.git
+     cd <the directory>
+     npm install
+     ```
 
 ### 13. **Replace API Key in the `index.js` File**
    - In the `index.js` file, replace the placeholder API key with the actual Gemini API key.
