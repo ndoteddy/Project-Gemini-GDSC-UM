@@ -61,7 +61,7 @@ Author : Hernando Ivan Teddy
      follow the tutorial from the instructor
      ```
    - Or you can simply clone this repository 
-  ```bash
+     ```bash
      git clone https://github.com/ndoteddy/Project-Gemini-GDSC-UM.git
      cd <the directory>
      npm install
