@@ -85,6 +85,7 @@ Author : Hernando Ivan Teddy
 
 ### 17. **Test the API**
    - Now, use Postman or any HTTP client to test the deployed API endpoint to ensure everything is working properly.
+   - Refer to "curl" file within directory
 
 
 
